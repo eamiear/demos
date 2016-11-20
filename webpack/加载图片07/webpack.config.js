@@ -11,7 +11,8 @@ module.exports = {
     },
     module:{
         loaders: [
-            {test: /\.css$/, loader: 'style!css'}
+            {test: /\.css$/, loader: 'style!css'},
+            {test: /\.(png|jpg)$/, loader: 'url?limit=40000'}
         ]
     },
     plugins: [
